@@ -1,0 +1,13 @@
+.btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+    min-width: 236px;
+    border-radius: 30px;
+    padding: 16px 32px;
+    background-color: #FA4A0C;
+    color: #fff;
+    &-transperent {
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+}
