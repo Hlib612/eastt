@@ -8,6 +8,7 @@
     color: $whiteColor;
 
     &-transperent {
+        @extend .btn;
         border: 1px solid $whiteColor;
         background-color: transparent;
     }
