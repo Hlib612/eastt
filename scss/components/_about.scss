@@ -1,6 +1,7 @@
 .about {
-    padding-top: 54px;
-    padding-bottom: 190px;
+    @include padings(54px, 190px);
+    // padding-top: 54px;
+    // padding-bottom: 190px;
     text-align: center;
 
     &-title {

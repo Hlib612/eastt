@@ -1,9 +1,11 @@
 @import"./base/reset";
 @import"./components/_placeholders";
+@import"./utils/mixins";
 @import"./utils/variebles";
 @import"./base/common";
 @import"./components/button";
 @import"./components/header";
 @import"./components/hero";
+@import"./components/about";
 @import"./components/order";
 @import"./components/footer";

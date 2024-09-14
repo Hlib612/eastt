@@ -1,8 +1,8 @@
 .hero {
     height: 619px;
-    padding-top: 80px;
-    padding-bottom: 160px;
-    background-color: grey;
+    @include padings(80px, 160px);
+    // padding-top: 80px;
+    // padding-bottom: 160px;
     text-align: center;
     background-color: $backgroundColor;
     background-image: url(../images/hero-bg.jpg);
@@ -32,7 +32,7 @@
     
     &-aftertitle {
         margin-bottom: 54px;
-        @extend %text-subtitles
+        @extend %text-subtitles;
         // font-family: $font-family;
         // font-weight: 500;
         // font-size: 24px;
