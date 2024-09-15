@@ -15,9 +15,7 @@
     }
     
     &-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       @extend %flex_centered;
         gap: 250px;
     }
     
