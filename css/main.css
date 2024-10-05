@@ -64,10 +64,29 @@ figure {
 }
 
 .container {
-  max-width: 1210px;
+  min-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+  outline: 2px dashed black;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    outline: 2px dashed yellow;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    outline: 2px dashed lawngreen;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    outline: 2px dashed red;
+  }
 }
 
 .section {
@@ -95,8 +114,20 @@ figure {
 }
 
 .header {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }
 .header-nav {
   display: -webkit-box;
@@ -113,6 +144,11 @@ figure {
   .header-logo .header-logo img {
     width: 100px;
     height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .header img {
+    width: 100px;
   }
 }
 .header-list {
@@ -133,6 +169,20 @@ figure {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .header-list {
+    gap: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .header-list {
+    gap: 94px;
+    font-size: 16px;
+  }
+}
 
 .hero {
   height: 619px;
@@ -144,14 +194,52 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 128px;
+    padding-bottom: 108px;
+    max-width: 480px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 160px;
+    height: 619px;
+    max-width: 1200px;
+  }
+}
 .hero-pretitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0em;
   text-align: center;
   color: #f6f6f6;
+}
+@media screen and (min-width: 480px) {
+  .hero-pretitle {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-pretitle {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-pretitle {
+    font-size: 58px;
+  }
 }
 .hero-title {
   margin-bottom: 20px;
@@ -164,10 +252,15 @@ figure {
   color: #fff;
 }
 .hero-aftertitle {
-  margin-bottom: 54px;
+  margin-bottom: 20px;
   line-height: 158%;
   text-align: center;
   color: #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  .hero-aftertitle {
+    margin-bottom: 54px;
+  }
 }
 .hero-btns {
   gap: 67px;

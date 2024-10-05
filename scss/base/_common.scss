@@ -1,8 +1,21 @@
 .container {
-    max-width: 1210px;
+    min-width: 320px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 15px;
+    outline: 2px dashed black;
+    @media screen and (min-width: 480px){
+        width: 480px;
+        outline: 2px dashed yellow;
+      }
+      @media screen and (min-width: 768px){
+        width: 768px;
+        outline: 2px dashed lawngreen;
+      }
+      @media screen and (min-width: 1200px){
+        width: 1200px;
+        outline: 2px dashed red;
+      }
 }
 .section {
     max-width: 1440px;
