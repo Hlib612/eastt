@@ -263,10 +263,10 @@ figure {
   }
 }
 .hero-btns {
-  gap: 67px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 67px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -276,6 +276,17 @@ figure {
   line-height: 150%;
   letter-spacing: 0em;
   color: #fff;
+  padding: 10px 26px;
+}
+@media screen and (min-width: 768px) {
+  .hero-btns {
+    padding: 14px 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-btns {
+    padding: 16px 32px;
+  }
 }
 
 .about {
