@@ -141,13 +141,7 @@ figure {
   margin-right: auto;
 }
 @media (max-width: 767px) {
-  .header-logo .header-logo img {
-    width: 100px;
-    height: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .header img {
+  .header-logo {
     width: 100px;
   }
 }
@@ -199,7 +193,7 @@ figure {
     padding-top: 128px;
     padding-bottom: 108px;
     max-width: 480px;
-    height: 400px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -228,28 +222,44 @@ figure {
 }
 @media screen and (min-width: 480px) {
   .hero-pretitle {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-pretitle {
-    font-size: 36px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-pretitle {
-    font-size: 58px;
+    font-size: 24px;
   }
 }
 .hero-title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 58px;
+  font-size: 20px;
   line-height: 138%;
   letter-spacing: 0em;
   text-align: center;
   color: #fff;
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 58px;
+  }
 }
 .hero-aftertitle {
   margin-bottom: 20px;
@@ -266,7 +276,11 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 67px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -281,11 +295,11 @@ figure {
 @media screen and (min-width: 768px) {
   .hero-btns {
     padding: 14px 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-btns {
-    padding: 16px 32px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 67px;
   }
 }
 
@@ -295,19 +309,43 @@ figure {
   text-align: center;
 }
 .about-title {
-  margin-bottom: 70px;
+  margin-bottom: 34px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 44px;
+  font-size: 28px;
   line-height: 82%;
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 0.8);
 }
-.about-item {
-  gap: 250px;
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 44px;
+    margin-bottom: 70px;
+  }
 }
 .about-item {
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .about-item {
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-item {
+    gap: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-item img {
+    display: none;
+  }
 }
 .about-item:nth-child(2n) {
   -webkit-box-orient: horizontal;
@@ -327,22 +365,52 @@ figure {
   letter-spacing: 0em;
   color: #FA4A0C;
 }
+@media screen and (min-width: 768px) {
+  .about-heading {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-heading {
+    font-size: 28px;
+  }
+}
 .about-description {
   margin-bottom: 17px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 26px;
   line-height: 142%;
   letter-spacing: 0.01em;
   color: #252b42;
 }
+@media screen and (min-width: 768px) {
+  .about-description {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-description {
+    font-size: 40px;
+  }
+}
 .about-addition {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 158%;
   letter-spacing: 0.01em;
   color: #737373;
+}
+@media screen and (min-width: 768px) {
+  .about-addition {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-addition {
+    font-size: 24px;
+  }
 }
 
 .order {
@@ -351,26 +419,42 @@ figure {
   background-image: url(../images/orderBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .order-title {
   margin-bottom: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 142%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .order-title {
+    font-size: 40px;
+  }
+}
 .order-text {
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 158%;
   letter-spacing: 0.01em;
   text-align: center;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .order-text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order-text {
+    font-size: 24px;
+  }
 }
 .order-btns {
   gap: 16px;
@@ -403,4 +487,9 @@ figure {
   line-height: 150%;
   letter-spacing: 0.01em;
   color: #5c5c5c;
+}
+@media screen and (max-width: 480px) {
+  .footer-autor {
+    max-width: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
