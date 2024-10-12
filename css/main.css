@@ -492,4 +492,73 @@ figure {
   .footer-autor {
     max-width: 80px;
   }
+}
+
+.header_menu_button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header_menu_button {
+    display: none;
+  }
+}
+.header_menu_button:hover {
+  background-color: rgba(167, 165, 165, 0.726);
+  border-radius: 50%;
+}
+
+.menu_button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: currentColor;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.menu_button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.menu_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  padding: 32px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu_container.is_open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }/*# sourceMappingURL=main.css.map */
