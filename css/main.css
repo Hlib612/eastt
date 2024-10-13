@@ -552,7 +552,7 @@ figure {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  background-color: rgb(255, 196, 0);
   padding: 32px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -561,4 +561,14 @@ figure {
 .menu_container.is_open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.menu_list {
+  font-size: 26px;
+  background-color: #FA4A0C;
+  color: antiquewhite;
+}
+
+.menu_list_item {
+  margin-bottom: 34px;
 }/*# sourceMappingURL=main.css.map */
