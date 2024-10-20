@@ -8,6 +8,11 @@
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/header_fon2x.jpg");
+}
     @media screen and (min-width: 480px){
         @include padings(128px, 108px);
         max-width: 480px;

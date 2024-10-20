@@ -188,6 +188,11 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/header_fon2x.jpg");
+  }
+}
 @media screen and (min-width: 480px) {
   .hero {
     padding-top: 128px;
@@ -420,6 +425,11 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url("../images/footer_fon2x.jpg");
+  }
 }
 .order-title {
   margin-bottom: 12px;
